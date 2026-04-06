@@ -24,6 +24,39 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .blog_item_img {
+            border-radius: 14px;
+            overflow: hidden;
+            background: #f6f2ee;
+        }
+
+        .blog-cover {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .hero-img img.hero-visual {
+            width: min(500px, 40vw);
+            height: 600px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.24);
+        }
+
+        @media (max-width: 991px) {
+            .hero-img img.hero-visual {
+                width: 78vw;
+                height: 420px;
+                margin: 24px auto 0;
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -54,7 +87,7 @@
                             <ul id="navigation">                                                                                                                                     
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="services.html">Services</a></li>
+                                
                                 <li><a href="blog.html">Blog</a>
                                     <ul class="submenu">
                                         <li><a href="blog.html">Blog</a></li>
@@ -81,7 +114,7 @@
 </header>
 <main>
     <div class="slider-area position-relative">
-        <div class="single-slider position-relative hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/h1_hero.png">
+        <div class="single-slider position-relative hero-overly slider-height2 d-flex align-items-center" data-background="img4.jpeg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-7 col-lg-8">
@@ -94,7 +127,7 @@
                 </div>
             </div>
             <div class="hero-img hero-img2">
-                <img src="https://images.pexels.com/photos/13862203/pexels-photo-13862203.jpeg?cs=srgb&dl=pexels-rehman-yousaf-321165099-13862203.jpg&fm=jpg" alt="ShopPhee blog feature" data-animation="fadeInRight" data-transition-duration="5s">
+                <img class="hero-visual" src="img4.jpeg" alt="ShopPhee blog feature" data-animation="fadeInRight" data-transition-duration="5s">
             </div>
         </div>
     </div>
@@ -113,7 +146,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/33537065/pexels-photo-33537065.jpeg?cs=srgb&dl=pexels-danbauchi-pixel-2155083304-33537065.jpg&fm=jpg" alt="How to style your abaya for any occasion">
+                            <img class="card-img rounded-0 blog-cover" src="img.jpeg" alt="How to style your abaya for any occasion">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="blog_post_1.html">
@@ -130,7 +163,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/35150034/pexels-photo-35150034.jpeg?cs=srgb&dl=pexels-ibrahim-abdullahi-2151213702-35150034.jpg&fm=jpg" alt="Why Nida fabric is perfect for everyday wear">
+                            <img class="card-img rounded-0 blog-cover" src="img45.jpeg" alt="Why Nida fabric is perfect for everyday wear">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="blog_post_2.html">
@@ -147,7 +180,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/35263643/pexels-photo-35263643.jpeg?cs=srgb&dl=pexels-bymalbus-35263643.jpg&fm=jpg" alt="Top abaya trends in 2026">
+                            <img class="card-img rounded-0 blog-cover" src="img4.jpeg" alt="Top abaya trends in 2026">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="blog_post_3.html">
@@ -164,7 +197,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/35357622/pexels-photo-35357622.jpeg?cs=srgb&dl=pexels-moh-dikko-photography-2151327861-35357622.jpg&fm=jpg" alt="Choosing the right abaya for your body type">
+                            <img class="card-img rounded-0 blog-cover" src="img45.jpeg" alt="Choosing the right abaya for your body type">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="blog_post_4.html">
@@ -181,7 +214,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/29188569/pexels-photo-29188569.jpeg?cs=srgb&dl=pexels-qalanjos-fashions-online-abaya-store-673551486-29188569.jpg&fm=jpg" alt="Dubai vs Turkish abayas what’s the difference">
+                            <img class="card-img rounded-0 blog-cover" src="img6.jpeg" alt="Dubai vs Turkish abayas what’s the difference">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="blog_post_5.html">
@@ -198,7 +231,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/34068990/pexels-photo-34068990.jpeg?cs=srgb&dl=pexels-khaliifah-hussein-1904370898-34068990.jpg&fm=jpg" alt="How to care for your abayas properly">
+                            <img class="card-img rounded-0 blog-cover" src="pics.jpeg" alt="How to care for your abayas properly">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="blog_post_6.html">
@@ -217,7 +250,7 @@
     </section>
 </main>
 <footer>
-    <div class="footer-wrapper section-bg2 pl-100"  data-background="assets/img/gallery/footer-bg.png">
+    <div class="footer-wrapper section-bg2 pl-100" style="background-color:#101A31;">
         <!-- Footer Start-->
         <div class="footer-area footer-padding">
             <div class="container">

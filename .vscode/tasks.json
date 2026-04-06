@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "populate-missing-images",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-NoProfile",
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"$ErrorActionPreference='Stop'; New-Item -ItemType Directory -Force -Path 'assets/img/blog','assets/img/hero','assets/img/gallery' | Out-Null; $srcMain = if (Test-Path 'img.jpeg') {'img.jpeg'} elseif (Test-Path 'img2.jpeg') {'img2.jpeg'} elseif (Test-Path 'profile.jpg') {'profile.jpg'} else { throw 'No local source image found in project root.' }; $srcAlt = if (Test-Path 'img2.jpeg') {'img2.jpeg'} else {$srcMain}; $srcProfile = if (Test-Path 'profile.jpg') {'profile.jpg'} else {$srcMain}; Copy-Item $srcProfile 'assets/img/blog/author.png' -Force; 1..5 | ForEach-Object { Copy-Item $srcMain ('assets/img/blog/single_blog_' + $_ + '.png') -Force }; Copy-Item $srcAlt 'assets/img/blog/blog_post_1.jpg' -Force; 1..3 | ForEach-Object { Copy-Item $srcProfile ('assets/img/blog/comment_' + $_ + '.png') -Force }; 'h1_hero.png','h1_hero1.png','h2_hero2.png','hero-icon.png','hero2.png' | ForEach-Object { Copy-Item $srcAlt ('assets/img/hero/' + $_) -Force }; 'video-bg.png','footer-bg.png','map.png','offers1.png','offers2.png','offers3.png' | ForEach-Object { Copy-Item $srcMain ('assets/img/gallery/' + $_) -Force }; if ((Test-Path 'profile.jpg') -and -not (Test-Path 'PROFILE.jpeg')) { Copy-Item 'profile.jpg' 'PROFILE.jpeg' -Force }; Write-Output 'done'"
+			]
+		},
+		{
+			"label": "populate-missing-images-cmd",
+			"type": "shell",
+			"command": "cmd",
+			"args": [
+				"/c",
+				"mkdir assets\\img\\blog assets\\img\\hero assets\\img\\gallery 2>nul && copy /Y profile.jpg assets\\img\\blog\\author.png >nul && copy /Y img.jpeg assets\\img\\blog\\single_blog_1.png >nul && copy /Y img.jpeg assets\\img\\blog\\single_blog_2.png >nul && copy /Y img.jpeg assets\\img\\blog\\single_blog_3.png >nul && copy /Y img.jpeg assets\\img\\blog\\single_blog_4.png >nul && copy /Y img.jpeg assets\\img\\blog\\single_blog_5.png >nul && copy /Y img2.jpeg assets\\img\\blog\\blog_post_1.jpg >nul && copy /Y profile.jpg assets\\img\\blog\\comment_1.png >nul && copy /Y profile.jpg assets\\img\\blog\\comment_2.png >nul && copy /Y profile.jpg assets\\img\\blog\\comment_3.png >nul && copy /Y img2.jpeg assets\\img\\hero\\h1_hero.png >nul && copy /Y img2.jpeg assets\\img\\hero\\h1_hero1.png >nul && copy /Y img2.jpeg assets\\img\\hero\\h2_hero2.png >nul && copy /Y img2.jpeg assets\\img\\hero\\hero-icon.png >nul && copy /Y img2.jpeg assets\\img\\hero\\hero2.png >nul && copy /Y img.jpeg assets\\img\\gallery\\video-bg.png >nul && copy /Y img.jpeg assets\\img\\gallery\\footer-bg.png >nul && copy /Y img.jpeg assets\\img\\gallery\\map.png >nul && copy /Y img.jpeg assets\\img\\gallery\\offers1.png >nul && copy /Y img.jpeg assets\\img\\gallery\\offers2.png >nul && copy /Y img.jpeg assets\\img\\gallery\\offers3.png >nul && copy /Y profile.jpg PROFILE.jpeg >nul && echo done"
+			]
+		}
+	]
+}

@@ -24,6 +24,42 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .blog_item_img {
+            border-radius: 14px;
+            overflow: hidden;
+            background: #f6f2ee;
+        }
+
+        .blog-cover {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .header-area.header_area {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        .header-bottom {
+            padding: 14px 0;
+        }
+
+        .logo img {
+            max-height: 52px;
+            width: auto;
+            display: block;
+        }
+
+        .header-right-btn .header-btn {
+            border-radius: 999px;
+            padding: 14px 26px;
+        }
+    </style>
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -79,12 +115,11 @@
 </header>
 <main>
     <div class="slider-area position-relative">
-        <div class="single-slider position-relative hero-overly slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.png">
+        <div class="single-slider position-relative hero-overly slider-height d-flex align-items-center" data-background="img.jpeg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-7 col-lg-8 col-md-10">
                         <div class="hero-caption">
-                            <img class="rotateme" src="assets/img/hero/hero-icon.png" alt="ShopPhee icon" data-animation="zoomIn" data-delay="1s">
                             <h1 data-animation="fadeInLeft" data-delay=".4s">Wear Your Dream Abaya with Confidence</h1>
                             <p data-animation="fadeInLeft" data-delay=".6s">Luxury meets modesty. Discover timeless elegance through uniquely styled abayas crafted to elevate your everyday look.</p>
                             <a href="#collections" class="btn" data-animation="fadeInLeft" data-delay=".8s">Shop Collection</a>
@@ -92,9 +127,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="hero-img">
-                <img src="https://images.pexels.com/photos/29188566/pexels-photo-29188566.jpeg?cs=srgb&dl=pexels-qalanjos-fashions-online-abaya-store-673551486-29188566.jpg&fm=jpg" alt="Woman wearing a blue embroidered abaya" data-animation="fadeInRight" data-transition-duration="5s">
             </div>
         </div>
     </div>
@@ -218,7 +250,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/33537065/pexels-photo-33537065.jpeg?cs=srgb&dl=pexels-danbauchi-pixel-2155083304-33537065.jpg&fm=jpg" alt="How to style your abaya for any occasion">
+                            <img class="card-img rounded-0 blog-cover" src="img4.jpeg" alt="How to style your abaya for any occasion">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="blog.html">
@@ -234,7 +266,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/35150034/pexels-photo-35150034.jpeg?cs=srgb&dl=pexels-ibrahim-abdullahi-2151213702-35150034.jpg&fm=jpg" alt="Why Nida fabric is perfect for everyday wear">
+                            <img class="card-img rounded-0 blog-cover" src="img4.jpeg" alt="Why Nida fabric is perfect for everyday wear">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="blog.html">
@@ -250,7 +282,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/35263643/pexels-photo-35263643.jpeg?cs=srgb&dl=pexels-bymalbus-35263643.jpg&fm=jpg" alt="Top abaya trends in 2026">
+                            <img class="card-img rounded-0 blog-cover" src="img6.jpeg" alt="Top abaya trends in 2026">
                         </div>
                         <div class="blog_details">
                             <a class="d-inline-block" href="blog.html">
@@ -276,7 +308,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <img src="https://images.pexels.com/photos/34251176/pexels-photo-34251176.jpeg?cs=srgb&dl=pexels-aa_dasuma-2155292386-34251176.jpg&fm=jpg" alt="Mufidat Yahaya profile" class="img-fluid" style="border-radius: 18px; box-shadow: 0 18px 45px rgba(0,0,0,.12);">
+                    <img src="assets/img/blog/author.png" alt="Mufidat Yahaya profile" class="img-fluid" style="border-radius: 18px; box-shadow: 0 18px 45px rgba(0,0,0,.12);">
                 </div>
                 <div class="col-lg-7">
                     <div class="section-tittle mb-40">
@@ -290,13 +322,13 @@
         </div>
     </section>
 
-    <div class="video-area section-bg2 d-flex align-items-center" data-background="assets/img/gallery/video-bg.png">
+    <div class="video-area section-bg2 d-flex align-items-center" style="background-color:#F2E1D9;">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-9 col-md-10 text-center">
                     <div class="section-tittle mb-0">
-                        <h2>Step Into Elegance Today</h2>
-                        <p>Discover your perfect abaya and redefine modest fashion.</p>
+                        <h2 style="color:#101A31;">Step Into Elegance Today</h2>
+                        <p style="color:#101A31;">Discover your perfect abaya and redefine modest fashion.</p>
                         <a href="#collections" class="btn">Shop Collection</a>
                     </div>
                 </div>
@@ -305,7 +337,7 @@
     </div>
 </main>
 <footer>
-    <div class="footer-wrapper section-bg2 pl-100"  data-background="assets/img/gallery/footer-bg.png">
+    <div class="footer-wrapper section-bg2 pl-100" style="background-color:#101A31;">
         <!-- Footer Start-->
         <div class="footer-area footer-padding">
             <div class="container">

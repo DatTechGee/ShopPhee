@@ -24,6 +24,25 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .hero-img img.hero-visual {
+            width: min(500px, 40vw);
+            height: 600px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.24);
+        }
+
+        @media (max-width: 991px) {
+            .hero-img img.hero-visual {
+                width: 78vw;
+                height: 420px;
+                margin: 24px auto 0;
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -54,7 +73,7 @@
                             <ul id="navigation">                                                                                                                                     
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="services.html">Services</a></li>
+                               
                                 <li><a href="blog.html">Blog</a>
                                     <ul class="submenu">
                                         <li><a href="blog.html">Blog</a></li>
@@ -81,7 +100,7 @@
 </header>
 <main>
     <div class="slider-area position-relative">
-        <div class="single-slider position-relative hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/h1_hero.png">
+        <div class="single-slider position-relative hero-overly slider-height2 d-flex align-items-center" data-background="img45.jpeg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-7 col-lg-8">
@@ -94,7 +113,7 @@
                 </div>
             </div>
             <div class="hero-img hero-img2">
-                <img src="https://images.pexels.com/photos/34721670/pexels-photo-34721670.jpeg?cs=srgb&dl=pexels-ali-ahmed-83499412-34721670.jpg&fm=jpg" alt="ShopPhee founder portrait" data-animation="fadeInRight" data-transition-duration="5s">
+                <img class="hero-visual" src="img45.jpeg" alt="ShopPhee founder portrait" data-animation="fadeInRight" data-transition-duration="5s">
             </div>
         </div>
     </div>
@@ -154,7 +173,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/32279501/pexels-photo-32279501.jpeg?cs=srgb&dl=pexels-kazys-photography-2151238955-32279501.jpg&fm=jpg" alt="Sophisticated designs">
+                            <img class="card-img rounded-0" src="assets/img/gallery/offers1.png" alt="Sophisticated designs">
                         </div>
                         <div class="blog_details">
                             <h2 class="blog-head" style="color: #2d2d2d;">Sophisticated Designs</h2>
@@ -165,7 +184,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/35150035/pexels-photo-35150035.jpeg?cs=srgb&dl=pexels-ibrahim-abdullahi-2151213702-35150035.jpg&fm=jpg" alt="Premium materials">
+                            <img class="card-img rounded-0" src="assets/img/gallery/offers2.png" alt="Premium materials">
                         </div>
                         <div class="blog_details">
                             <h2 class="blog-head" style="color: #2d2d2d;">Premium Materials</h2>
@@ -176,7 +195,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/35263643/pexels-photo-35263643.jpeg?cs=srgb&dl=pexels-bymalbus-35263643.jpg&fm=jpg" alt="Versatile styles">
+                            <img class="card-img rounded-0" src="assets/img/blog/single_blog_3.png" alt="Versatile styles">
                         </div>
                         <div class="blog_details">
                             <h2 class="blog-head" style="color: #2d2d2d;">Versatile Styles</h2>
@@ -244,7 +263,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/33539326/pexels-photo-33539326.jpeg?cs=srgb&dl=pexels-abdulkadir-muhammad-sani-2150944758-33539326.jpg&fm=jpg" alt="Choosing the perfect abaya for your body type">
+                            <img class="card-img rounded-0" src="assets/img/blog/single_blog_4.png" alt="Choosing the perfect abaya for your body type">
                         </div>
                         <div class="blog_details">
                             <h2 class="blog-head" style="color: #2d2d2d;">Choosing the Perfect Abaya for Your Body Type</h2>
@@ -254,7 +273,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/34251176/pexels-photo-34251176.jpeg?cs=srgb&dl=pexels-aa_dasuma-2155292386-34251176.jpg&fm=jpg" alt="Everyday modesty styling tips">
+                            <img class="card-img rounded-0" src="assets/img/blog/author.png" alt="Everyday modesty styling tips">
                         </div>
                         <div class="blog_details">
                             <h2 class="blog-head" style="color: #2d2d2d;">Everyday Modesty Styling Tips</h2>
@@ -264,7 +283,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="blog_item mb-40">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="https://images.pexels.com/photos/35150037/pexels-photo-35150037.jpeg?cs=srgb&dl=pexels-ibrahim-abdullahi-2151213702-35150037.jpg&fm=jpg" alt="How to care for your abaya">
+                            <img class="card-img rounded-0" src="assets/img/blog/single_blog_5.png" alt="How to care for your abaya">
                         </div>
                         <div class="blog_details">
                             <h2 class="blog-head" style="color: #2d2d2d;">How to Care for Your Abaya</h2>
@@ -284,7 +303,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0">
-                    <img src="PROFILE.jpeg" alt="Mufidat Yahaya profile" class="img-fluid" style="border-radius: 18px; box-shadow: 0 18px 45px rgba(0,0,0,.12);">
+                    <img src="profile.jpg" alt="Mufidat Yahaya profile" class="img-fluid" style="border-radius: 18px; box-shadow: 0 18px 45px rgba(0,0,0,.12);">
                 </div>
                 <div class="col-lg-7">
                     <div class="section-tittle mb-40">
@@ -299,7 +318,7 @@
     </section>
 </main>
 <footer>
-    <div class="footer-wrapper section-bg2 pl-100"  data-background="assets/img/gallery/footer-bg.png">
+    <div class="footer-wrapper section-bg2 pl-100" style="background-color:#101A31;">
         <!-- Footer Start-->
         <div class="footer-area footer-padding">
             <div class="container">
